@@ -1,4 +1,15 @@
 receivers:
+docker_stats:
+hostmetrics:
+  collection_interval: 30s
+  scrapers:
+    cpu:
+    memory:
+    disk:
+    filesystem:
+    load:
+    network:
+    processes:
   tcplog/docker:
     listen_address: "0.0.0.0:2255"
     operators:
